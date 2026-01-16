@@ -72,5 +72,27 @@ else{
 
 //loop (for)
 for(let i=1; i<=5; i++){
-    cosnole.log()
+    cosnole.log("loop count:",i);
 }
+ 
+//function
+
+function add(x,y){
+    return x+y;
+}
+
+// simple backend login
+const admin={
+    username: "admin",
+    password: "1234"
+};
+//admin object stores fixed credentials as a username and password.
+function login(user, pass){ //user and password (parameters)
+    if (user === admin.username && pass === admin.password){ //(===) to compare the input values
+        console.log("login successful");
+    }
+    else{
+        console.log("invalid");
+    }
+}
+    
