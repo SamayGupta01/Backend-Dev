@@ -61,7 +61,7 @@ app.get("/step3", (req, res) => {
     </form>
   `);
 });
-
+        
 app.post("/step3", (req, res) => {
   req.session.user.password = req.body.password;
   res.redirect("/summary");
